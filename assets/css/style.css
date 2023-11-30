@@ -21,6 +21,8 @@ body {
  /*Main Content */
  main {
     background-color: lightblue;
+    /* Make the main element take up any surplus space to push footer down*/
+    flex: 1 0 auto;
  }
 
 /* Footer */
