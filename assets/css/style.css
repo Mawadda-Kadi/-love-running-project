@@ -77,7 +77,7 @@ nav {
     background-color: lightblue;
     /* Make the main element take up any surplus space to push footer down*/
     flex: 1 0 auto;
-    margin-top: 47px;
+    margin-top: 50px;
  }
 
 /* Footer */
@@ -97,5 +97,12 @@ footer {
     #menu {
         display: flex;
     }
+    #menu > li {
+        padding-left: 1rem;
     }
+    .nav-toggle-label {
+        display: none;
+    }
+
+}
 }
