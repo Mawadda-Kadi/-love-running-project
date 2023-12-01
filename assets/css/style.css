@@ -109,7 +109,13 @@ footer {
         margin: 0 0,5rem;
         }
 
-        /* Push main contet down to accomadate larger header */
+        /* Main Content */
+        main {
+        /* Push main contet down to accomadate larger header */    
+         margin-top: 79px;
+        }
+        
+
 
     }
 }
