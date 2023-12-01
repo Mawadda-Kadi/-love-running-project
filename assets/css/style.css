@@ -93,7 +93,14 @@ main {
 
 /* Footer */
 footer {
-    background-color: orange;
+    text-align: center;
+    padding: 20px 0;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+}
+footer li {
+    list-style-type: none;
 }
 
 /* Media query: tablets and larger (768px and up) */
