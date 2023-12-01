@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Open+Sans:wght@300&display=swap');
 
 /*Asteric Wildcard Selector to override default syles added by the browser*/
- * {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 /* General Styles*/
 body {
     min-height: 100vh;
@@ -17,8 +18,8 @@ body {
     color: #3a3a3a
 }
 
-/* Header */ 
- header {
+/* Header */
+header {
     background-color: #fff;
     padding: 0 1rem;
     position: fixed;
@@ -28,29 +29,35 @@ body {
     justify-content: space-between;
     align-items: baseline;
     box-shadow: 0 2px 2px #3a3a3a;
- }
- header a {
+}
+
+header a {
     text-decoration: none;
     color: inherit;
- }
- h1 {
+}
+
+h1 {
     font-family: 'Alkatra', sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-size: 170%;
     color: #252525
- }
+}
+
 #menu {
     letter-spacing: 4px;
     list-style-type: none;
     font-size: 110%;
 }
-#menu > li {
+
+#menu>li {
     margin-bottom: 1em;
 }
+
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
@@ -62,23 +69,27 @@ nav {
     top: 100%;
     width: 100%;
 }
+
 /* Nav Toggle */
 #nav-toggle:checked~nav {
     display: block;
 }
+
 #nav-toggle {
     display: none;
 }
+
 .nav-toggle-label {
     font-size: 2rem;
 }
- /*Main Content */
- main {
+
+/*Main Content */
+main {
     background-color: lightblue;
     /* Make the main element take up any surplus space to push footer down*/
     flex: 1 0 auto;
     margin-top: 50px;
- }
+}
 
 /* Footer */
 footer {
@@ -87,6 +98,7 @@ footer {
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
     /* Header*/
     nav {
         display: block;
@@ -94,28 +106,36 @@ footer {
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
+
         #menu {
-        display: flex;
+            display: flex;
         }
-        #menu > li {
-        padding-left: 1rem;
+
+        #menu>li {
+            padding-left: 1rem;
         }
+
         .nav-toggle-label {
-        display: none;
+            display: none;
         }
+
         #logo {
-        font-size: 320%;
-        line-height: 75px;
-        margin: 0 0,5rem;
+            font-size: 320%;
+            line-height: 75px;
+            margin: 0 0, 5rem;
         }
 
         /* Main Content */
         main {
-        /* Push main contet down to accomadate larger header */    
-         margin-top: 79px;
+            /* Push main contet down to accomadate larger header */
+            margin-top: 79px;
         }
-        
+    }
+}
 
-
+/* Media query for Laptops and Desktops (992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
     }
 }
