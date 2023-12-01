@@ -94,15 +94,22 @@ footer {
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
-    #menu {
+        #menu {
         display: flex;
-    }
-    #menu > li {
+        }
+        #menu > li {
         padding-left: 1rem;
-    }
-    .nav-toggle-label {
+        }
+        .nav-toggle-label {
         display: none;
-    }
+        }
+        #logo {
+        font-size: 320%;
+        line-height: 75px;
+        margin: 0 0,5rem;
+        }
 
-}
+        /* Push main contet down to accomadate larger header */
+
+    }
 }
