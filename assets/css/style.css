@@ -95,12 +95,27 @@ main {
 footer {
     text-align: center;
     padding: 20px 0;
-    justify-content: space-evenly;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
+    align-items: baseline;
 }
 footer li {
     list-style-type: none;
+}
+#social-networks {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+#social-networks li {
+    margin-right: 10px;
+}
+
+#social-networks a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Media query: tablets and larger (768px and up) */
